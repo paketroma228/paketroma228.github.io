@@ -6,8 +6,8 @@
   --selection-bg: #262a30;
   --selection-color: #eee;
   --blockquote-color: #666;
-  --link-color: #f74e2d;
-  --link-hover-color: #f74e2d;
+  --link-color: #555;
+  --link-hover-color: #222;
   --brand-color: #fff;
   --brand-hover-color: #fff;
   --table-row-odd-bg-color: #f9f9f9;
@@ -35,8 +35,8 @@
     --selection-bg: #bbb;
     --selection-color: #333;
     --blockquote-color: #bbb;
-    --link-color: #f74e2d;
-    --link-hover-color: #f74e2d;
+    --link-color: #ccc;
+    --link-hover-color: #eee;
     --brand-color: #ddd;
     --brand-hover-color: #ddd;
     --table-row-odd-bg-color: #282828;
@@ -262,7 +262,7 @@ h6 {
   font-size: 0.875em;
 }
 a {
-  border-bottom: 1px solid #f74e2d;
+  border-bottom: 1px solid #999;
   color: var(--link-color);
   cursor: pointer;
   outline: 0;
@@ -1379,7 +1379,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #9d399d;
+    background: #5411cd;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
