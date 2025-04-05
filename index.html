@@ -218,10 +218,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><a target="_blank" rel="noopener" href="https://rejetweb.jp/climax-records/">Climax Records</a><br />
-<a target="_blank" rel="noopener" href="https://x.com/climax_records">Twitter/X</a><br />
-<a target="_blank" rel="noopener" href="https://www.youtube.com/@CRofficial_CLIMAXTUBE">CLIMAX TUBE</a><br />
-<a target="_blank" rel="noopener" href="https://www.tiktok.com/@climax_records">TikTok</a><br />
+          <p><a target="_blank" rel="noopener" href="https://rejetweb.jp/climax-records/">Climax Records</a><br>
+<a target="_blank" rel="noopener" href="https://x.com/climax_records">Twitter/X</a><br>
+<a target="_blank" rel="noopener" href="https://www.youtube.com/@CRofficial_CLIMAXTUBE">CLIMAX TUBE</a><br>
+<a target="_blank" rel="noopener" href="https://www.tiktok.com/@climax_records">TikTok</a><br>
 <a target="_blank" rel="noopener" href="https://rejet.jp">Rejet.co</a></p>
 
       
@@ -304,12 +304,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>повідомлення до фанатів<br />
-бонусні лінії (6)<br />
-{04:37} そばにいて (Ніч Артиста) - <em>пісня</em><br />
-{03:49} アーティストナイト (Залишся Зі Мною) - <em>пісня</em><br />
-{07:41} Ключ до (Моєї) Любові - <em>драма</em><br />
-{17:40} Брехня Попереду – <em>драма</em><br />
+          <p>повідомлення до фанатів<br>
+бонусні лінії (6)<br>
+{04:37} そばにいて (Ніч Артиста) - <em>пісня</em><br>
+{03:49} アーティストナイト (Залишся Зі Мною) - <em>пісня</em><br>
+{07:41} Ключ до (Моєї) Любові - <em>драма</em><br>
+{17:40} Брехня Попереду – <em>драма</em><br>
 {04:20} Перебороти Біль - <em>драма</em></p>
           <!--noindex-->
             <div class="post-button">
@@ -382,13 +382,22 @@ var options = {
   backgroundColor: 'transparent',
   buttonColorDark: '#100f2c',
   buttonColorLight: '#fff',
-  saveInCookies: true,
+  saveInCookies: false,
   label: '🌓',
-  autoMatchOsTheme: true
+  autoMatchOsTheme: false
 }
 const darkmode = new Darkmode(options);
 window.darkmode = darkmode;
 darkmode.showWidget();
+if (window.darkmode && !window.darkmode.isActivated()) {
+  window.darkmode.toggle();
+  var toggleButtons = document.getElementsByClassName("darkmode-toggle");
+  if (toggleButtons && toggleButtons.length > 0) {
+    for (i = 0; i < toggleButtons.length; i++) {
+      toggleButtons[i].classList.add("darkmode-toggle--white");
+    }
+  }
+}
 </script>
 
 </body>
