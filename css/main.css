@@ -1184,7 +1184,7 @@ pre code {
 }
 @media (max-width: 991px) {
   .sidebar {
-    left: -320px;
+    left: -330px;
   }
   .sidebar-active .sidebar {
     left: 0;
@@ -1199,7 +1199,7 @@ pre code {
     top: 0;
     transition: 0.2s ease-out;
     transition-property: left, right;
-    width: 320px;
+    width: 330px;
     z-index: 20;
   }
   .sidebar a {
@@ -1221,7 +1221,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #3495e7;
+    background: #ffd265;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1471,6 +1471,7 @@ pre code {
   border: 1px solid #eee;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
